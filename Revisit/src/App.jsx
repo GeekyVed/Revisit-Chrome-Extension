@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReminderForm from './components/ReminderForm';
 import ReminderList from './components/ReminderList';
+import RevisitHeading from './components/RevisitHeading';
 
 function App() {
   const [reminders, setReminders] = useState([]);
@@ -27,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Reminder Extension</h1>
+      <RevisitHeading/>
       <ReminderForm addReminder={addReminder} />
       <ReminderList reminders={reminders} />
     </div>
